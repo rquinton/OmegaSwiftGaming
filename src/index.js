@@ -3,6 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDiMA0B5hZYmsk3fuxWne5zXJBtMsezO7A",
+  authDomain: "omegaswiftgaming.firebaseapp.com",
+  projectId: "omegaswiftgaming",
+  storageBucket: "omegaswiftgaming.appspot.com",
+  messagingSenderId: "424964157111",
+  appId: "1:424964157111:web:f88ade5645e31a1ebe6732",
+  measurementId: "G-TP75XE2743"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
