@@ -88,7 +88,7 @@
           <a href="https://m.me/rquinton90" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/128px-Facebook_Messenger_logo_2020.svg.png" alt="aa"></a>
           <a href="https://www.facebook.com/OmegaSwiftGaming" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/128px-F_icon.svg.png" alt=""></a>
           <a href="https://t.me/OmegaSwiftGaming" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/128px-Telegram_logo.svg.png" alt=""></a>
-          <a href="https://wa.me/qr/DB5KENPJII5VL1" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/128px-WhatsApp.svg.png" alt=""></a>
+          <a href="https://wa.me/qr/DB5KENPJII5VL1" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/128px-WhatsApp_logo-color-vertical.svg.png" alt=""></a>
           <a href="tel:+13036163342"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IMessage_logo.svg/128px-IMessage_logo.svg.png" alt=""></a>
           <a href="mailto:omegaswiftonline@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Gmail_2020.png" alt=""></a>
         </div>
@@ -135,6 +135,36 @@ OmegaSwiftGaming
       <div>
         All Rights Reserved | Omega Swift Gaming 	&copy; 2022
       </div>
+      <!-- Messenger Chat Plugin Code -->
+      <div id="fb-root"></div>
+
+      <!-- Your Chat Plugin code -->
+      <div id="fb-customer-chat" class="fb-customerchat">
+      </div>
+
+      <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "100429679374042");
+        chatbox.setAttribute("attribution", "biz_inbox");
+      </script>
+
+      <!-- Your SDK code -->
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v14.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
     </div>
 
     <script>
