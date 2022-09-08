@@ -17,6 +17,7 @@
     <script defer src="/__/firebase/9.9.4/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/9.9.4/firebase-remote-config-compat.js"></script>
     <script defer src="/__/firebase/9.9.4/firebase-performance-compat.js"></script>
+    
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -72,101 +73,8 @@
     </style>
   </head>
   <body>
-    <div id="page-body">
-      <div id="title">
-         <h1>
-          OMEGA SWIFT GAMING
-         </h1>
-      </div>
-      <div className="body">
-
-        <p id="heading">
-          Please stay connected through any of the following channels!
-        </p>
-        
-        <div class="channels">
-          <a href="https://m.me/rquinton90" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/128px-Facebook_Messenger_logo_2020.svg.png" alt="aa"></a>
-          <a href="https://www.facebook.com/OmegaSwiftGaming" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/128px-F_icon.svg.png" alt=""></a>
-          <a href="https://t.me/OmegaSwiftGaming" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/128px-Telegram_logo.svg.png" alt=""></a>
-          <a href="https://wa.me/qr/DB5KENPJII5VL1" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/128px-WhatsApp_logo-color-vertical.svg.png" alt=""></a>
-          <a href="tel:+13036163342"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IMessage_logo.svg/128px-IMessage_logo.svg.png" alt=""></a>
-          <a href="mailto:omegaswiftonline@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Gmail_2020.png" alt=""></a>
-        </div>
-
-        <div class="wrapper">
-          <h2><pre>Available Platforms
-@
-OmegaSwiftGaming
-(Click to Download)</pre></h2>
-          <ul>
-            <li>
-              <a class="button4" href="https://themilkywayapp.com" target="_blank">Milky Way</a>
-            </li>
-            <li>
-              <a class="button4" href="https://highrollerdownload.com/" target="_blank">High Roller</a>
-            </li>
-            <li>
-              <a class="button4" href="http://www.gameroom777.com/" target="_blank">Gameroom Online</a>
-            </li>
-            <li>
-              <a class="button4" href="https://playlol.online:81/web-mobile/?v=1005" target="_blank">Life of Luxury</a>
-            </li>
-            <li>
-              <a class="button4" href="https://pandamaster.vip:8888/index.html" target="_blank">Panda Master</a>
-            </li>
-            <li>
-              <a class="button4" href="http://firekirin.xyz:8580/index.html" target="_blank">Fire Kirin</a>
-            </li>
-            <li>
-              <a class="button4" href="http://orionstars.vip:8580/index.html" target="_blank">Orion Stars</a>
-            </li>
-            <li>
-              <a class="button4" href="http://www.oceanking99.net/" target="_blank">X Game</a>
-            </li>
-            <li>
-              <a class="button4" href="https://www.ultramonster.net/" target="_blank">Ultra Monster</a>
-            </li>
-            <li>
-              <a class="button4" href="https://www.vpower777.com/#/download/index" target="_blank">V Power</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        All Rights Reserved | Omega Swift Gaming 	&copy; 2022
-      </div>
-      <!-- Messenger Chat Plugin Code -->
-      <div id="fb-root"></div>
-
-      <!-- Your Chat Plugin code -->
-      <div id="fb-customer-chat" class="fb-customerchat">
-      </div>
-
-      <script>
-        var chatbox = document.getElementById('fb-customer-chat');
-        chatbox.setAttribute("page_id", "100429679374042");
-        chatbox.setAttribute("attribution", "biz_inbox");
-      </script>
-
-      <!-- Your SDK code -->
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v14.0'
-          });
-        };
-
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script>
-    </div>
-
+    <div id="root"></div>
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const loadEl = document.querySelector('#load');
@@ -185,7 +93,9 @@ OmegaSwiftGaming
         //
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
+
         try {
+          
           let app = firebase.app();
           let features = [
             'auth', 
